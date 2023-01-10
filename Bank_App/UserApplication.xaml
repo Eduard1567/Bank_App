@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank_App.UserApplication"
+             Title="UserApplication">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <StackLayout VerticalOptions="CenterAndExpand"  Padding="0">
+                <Frame Padding="20">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" >
+                            <Label x:Name="nameLabel" FontSize="Header"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand">
+                            <Label x:Name="balanceLabel"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="5,5,5,20" HorizontalOptions="CenterAndExpand">
+                            <Entry x:Name="depositAmountEntry" WidthRequest="250" HeightRequest="50" Margin="10,10,10,10"/>
+                            <Button x:Name="depositBtn" Text="Deposit" Clicked="OnDepositClicked"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="5,5,5,20" HorizontalOptions="CenterAndExpand">
+                            <Entry x:Name="withdrawAmountEntry" WidthRequest="250" HeightRequest="50" Margin="10,10,10,10"/>
+                            <Button x:Name="withdrawalBtn" Text="Withdraw" Clicked="OnWithdrawClicked"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="20,5,5,20" HorizontalOptions="CenterAndExpand">
+                            <Button x:Name="transactionHistoryBtn" Text="Transaction History" Clicked="OnTransactionHistoryClicked"/>
+                            <Button x:Name="deleteAccountBtn" Text="Delete Account" Clicked="OnDeleteAccountClicked"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="20,5,5,20" HorizontalOptions="CenterAndExpand">
+                            <Button x:Name="LogoutBtn" Text="Logout" Clicked="OnLogoutClicked"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
