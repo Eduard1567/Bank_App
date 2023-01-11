@@ -2,3 +2,5 @@
 deposit test~5
 deposit test~15
 withdrawal test~30
+deposit cristina~10500
+withdrawal cristina~100
